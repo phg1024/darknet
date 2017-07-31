@@ -11,6 +11,7 @@
 
 #ifndef __cplusplus
 #ifdef OPENCV
+IplImage* LoadImageWithCV(const char* filename, int flag);
 int fill_image_from_stream(CvCapture *cap, image im);
 image ipl_to_image(IplImage* src);
 void ipl_into_image(IplImage* src, image im);
@@ -69,4 +70,3 @@ float bilinear_interpolate(image im, float x, float y, int c);
 image get_image_layer(image m, int l);
 
 #endif
-

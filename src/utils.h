@@ -44,5 +44,5 @@ float **one_hot_encode(float *a, int n, int k);
 float sec(clock_t clocks);
 void print_statistics(float *a, int n);
 
+int cvRound(double x);
 #endif
-
